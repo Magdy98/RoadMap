@@ -26,7 +26,6 @@ export function ContentDrawer(props: ContentDrawerProps) {
       queryGroupElementsById(groupId).forEach((item) =>
         item?.classList?.remove('done')
       );
-    //if btn clicked done and not done click 
     if (clickedBtn == 'done' && status != 'done')
       queryGroupElementsById(groupId).forEach((item) =>
         item?.classList?.add('done')
